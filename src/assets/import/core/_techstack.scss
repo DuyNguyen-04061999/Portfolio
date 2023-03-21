@@ -1,0 +1,58 @@
+.techstack {
+    background: $gray-50;
+    &.dark {
+        background: $black-cl;
+    }
+    padding-top: $gap-about-techstack;
+    padding-bottom: 140px;
+    &__heading {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        &-title {
+            @include text($work-sans, 4rem, 5.6rem, initial, $gray-900, capitalize);
+            font-weight: 600;
+
+            &#dark {
+                color: $white-cl;
+            }
+        }
+
+        &-script {
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
+
+    &__content {
+        @include contentGrid(5);
+        @include sm {
+            @include contentGrid();
+        }
+        @include xs {
+            @include contentGrid(2);
+        }
+        @include xxs {
+            @include contentGrid(1);
+        }
+        gap: 24px;
+        margin-top: 30px;
+
+        &#dark {
+            .techstack__content-item {
+                img {
+                    filter: drop-shadow(16px 16px 4px rgba(88, 88, 88, 0.7));
+                }
+            }
+        }
+        &-item {
+            @include mid(true);
+            @include br(50%);
+            img {
+                filter: drop-shadow(16px 16px 4px #ccc);
+            }
+        }
+    }
+}

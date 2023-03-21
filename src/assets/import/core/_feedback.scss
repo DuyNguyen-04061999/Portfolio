@@ -1,0 +1,90 @@
+.testimonial {
+    padding: 100px 0;
+    margin-bottom: -160px;
+    background: linear-gradient(
+        181.87deg,
+        rgba(255, 234, 198, 0.2) -157.44%,
+        rgba(255, 234, 198, 0.144) 216.94%,
+        rgba(255, 234, 198, 0.134) 216.94%
+    );
+    &#dark {
+        background: $black-cl;
+
+        .testimonial__body {
+            &-text,
+            &-auth,
+            &-info {
+                color: $white-cl;
+            }
+        }
+        .swiper-pagination-bullet {
+            background: $gray-50;
+
+            &-active {
+                background: $white-cl;
+            }
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 70px;
+        &-title {
+            @include text($work-sans, 4.8rem, 5.6rem, initial, #333, capitalize);
+            font-weight: 600;
+            margin-bottom: 24px;
+
+            &#dark {
+                color: $white-cl;
+            }
+        }
+
+        &-script {
+            max-width: 577px;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    &__body {
+        &-text {
+            @include text($work-sans, 1.8rem, 2.4rem, initial, $gray-800, normal);
+            font-weight: 500;
+            max-width: 872px;
+            width: 100%;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-auth {
+            @include text($poppins, 1.8rem, 2.6rem, initial, $black-cl, capitalize);
+            font-weight: 500;
+        }
+
+        &-info {
+            @include text($poppins, 1.6rem, 2.4rem, initial, $black-cl, normal);
+            font-weight: 300;
+        }
+        &-img {
+            @include size(60px);
+            @include br(50%);
+            overflow: hidden;
+            @include imgFit;
+            margin-bottom: 8px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background: $gray-500;
+        @include transition(0.5s);
+        &-active {
+            @include size(30px, 8px);
+            @include br(100px);
+            background: $primary-900;
+        }
+    }
+}
