@@ -11,11 +11,11 @@ $sm-min: 62em; //992px KHÔNG THAY ĐỔI
 $md-min: 75em; //1200px KHÔNG THAY ĐỔI
 $lg-min: 100em; //1600px CÓ THỂ TÙY CHỈNH
 
-$xxs-max: (calc($xxs-min - calc(1 / 16))); // Small Mobile
-$xs-max: (calc($xs-min - calc(1 / 16))); // Mobile
-$sm-max: (calc($sm-min - calc(1 / 16))); // Tablet
-$md-max: (calc($md-min - calc(1 / 16))); // Desktop
-$lg-max: (calc($lg-min - calc(1 / 16))); // Large Desktop
+$xxs-max: ($xxs-min - calc(1 / 16)); // Small Mobile
+$xs-max: ($xs-min - calc(1 / 16)); // Mobile
+$sm-max: ($sm-min - calc(1 / 16)); // Tablet
+$md-max: ($md-min - calc(1 / 16)); // Desktop
+$lg-max: ($lg-min - calc(1 / 16)); // Large Desktop
 
 //=====================================CÁC BIẾN KHÔNG THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE======================================
 // colors - tuỳ chỉnh
