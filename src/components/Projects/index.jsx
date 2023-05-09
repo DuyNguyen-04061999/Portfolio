@@ -24,14 +24,14 @@ const data = [
     related: [html, css, js],
     title: "Music App",
     github: "https://github.com/DuyNguyen-04061999/mp3advancedremake",
-    web: "https://musicplayermrduy-6c30b.web.app/",
+    web: "https://mp3advancedremake.vercel.app/",
   },
   {
     id: 2,
     img: skinBeauty,
     title: "Skin Beauty",
     related: [html, css, tailwind, js],
-    github: "https://github.com/DuyNguyen-04061999/Skinbeauty",
+    github: "https://duynguyen-04061999.github.io/Skinbeauty/public/",
     web: "https://skinbeauty-1e470.web.app/",
   },
   {
