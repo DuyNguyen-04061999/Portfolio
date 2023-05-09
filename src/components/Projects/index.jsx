@@ -31,8 +31,8 @@ const data = [
     img: skinBeauty,
     title: "Skin Beauty",
     related: [html, css, tailwind, js],
-    github: "https://duynguyen-04061999.github.io/Skinbeauty/public/",
-    web: "https://skinbeauty-1e470.web.app/",
+    github: "https://github.com/DuyNguyen-04061999/Skinbeauty",
+    web: "https://duynguyen-04061999.github.io/Skinbeauty/public/",
   },
   {
     id: 3,
